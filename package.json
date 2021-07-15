@@ -1,13 +1,13 @@
 {
   "name": "snowpack-sandbox",
   "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "samherrmann",
   "license": "MIT",
+  "scripts": {
+    "start": "snowpack dev",
+    "snowpack": "snowpack",
+    "build": "snowpack build"
+  },
   "devDependencies": {
     "snowpack": "^3.8.2"
   }
