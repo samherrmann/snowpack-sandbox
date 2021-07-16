@@ -6,10 +6,13 @@
   "scripts": {
     "start": "snowpack dev",
     "snowpack": "snowpack",
-    "build": "snowpack build"
+    "build": "snowpack build",
+    "tsc": "tsc"
   },
   "devDependencies": {
-    "snowpack": "^3.8.2"
+    "@snowpack/plugin-typescript": "^1.2.1",
+    "snowpack": "^3.8.2",
+    "typescript": "^4.3.5"
   },
   "dependencies": {
     "axios": "^0.21.1"

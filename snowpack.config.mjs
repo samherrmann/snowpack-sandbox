@@ -2,7 +2,7 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 export default {
-  plugins: [],
+  plugins: ['@snowpack/plugin-typescript'],
   root: "src",
   buildOptions: {
     out: "dist"
