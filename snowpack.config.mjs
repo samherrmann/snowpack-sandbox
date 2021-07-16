@@ -4,7 +4,8 @@
 export default {
   plugins: [
     '@snowpack/plugin-typescript',
-    '@snowpack/plugin-sass'
+    '@snowpack/plugin-sass',
+    '@snowpack/plugin-optimize'
   ],
   root: "src",
   buildOptions: {

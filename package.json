@@ -10,6 +10,7 @@
     "tsc": "tsc"
   },
   "devDependencies": {
+    "@snowpack/plugin-optimize": "^0.2.13",
     "@snowpack/plugin-sass": "^1.4.0",
     "@snowpack/plugin-typescript": "^1.2.1",
     "snowpack": "^3.8.2",
