@@ -1,13 +1,18 @@
 import axios from 'axios';
+import Alpine from 'alpinejs';
 
-const h1 = document.querySelector('h1');
+Alpine.data('myComponent', () => ({
+  
+  message: '',
 
-if (h1) {
-  try {
-    const res = await axios.get('/api.json');
-    h1.innerHTML = res.data.message;
-  } catch (err) {
-    h1.innerHTML = 'Failed to get API data.'
+  async init() {
+    try {
+      const res = await axios.get('/api.json');
+      this.message = res.data.message;
+    } catch (err) {
+      this.message = 'Failed to get API data.'
+    }
   }
-}
+}))
 
+Alpine.start()
