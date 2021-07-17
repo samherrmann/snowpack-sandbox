@@ -1,11 +1,11 @@
 import axios from 'axios';
 import Alpine from 'alpinejs';
 
-Alpine.data('myComponent', () => ({
-  
-  message: '',
+class MyComponent {
 
-  async init() {
+  message = '';
+
+  async init(): Promise<void> {
     try {
       const res = await axios.get('/api.json');
       this.message = res.data.message;
@@ -13,6 +13,7 @@ Alpine.data('myComponent', () => ({
       this.message = 'Failed to get API data.'
     }
   }
-}))
+}
 
+Alpine.data('myComponent', () => new MyComponent())
 Alpine.start()
